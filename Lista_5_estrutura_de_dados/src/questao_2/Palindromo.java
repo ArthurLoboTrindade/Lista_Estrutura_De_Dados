@@ -11,7 +11,7 @@ public class Palindromo {
 		Scanner sc = new Scanner(System.in);
 		
 		System.out.println("Informe o possível palindromo");
-		String s = sc.nextLine();
+		String s = sc.nextLine().replaceAll("[^a-zA-Z0-9]", "").toLowerCase();;
 		
 		for (int i = 0; i < s.length(); i++) {
 			palindromoWriter.add(s.charAt(i));
